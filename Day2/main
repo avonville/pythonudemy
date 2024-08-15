@@ -1,0 +1,15 @@
+age = input("What is your current age? ")
+
+# Write code below to calculate the number of days, weeks, years until you turn 90 years old.
+
+days_in_year = 365
+weeks_in_year = 52
+months_in_year = 12
+
+years_left = 90 - int(age)
+days_left = years_left * days_in_year
+weeks_left = years_left * weeks_in_year
+months_left = years_left * months_in_year
+
+print(
+    f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
