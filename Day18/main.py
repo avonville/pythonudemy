@@ -1,3 +1,4 @@
+# Create a spirograph using turtle graphics
 from turtle import Turtle, Screen
 import random
 

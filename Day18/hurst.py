@@ -1,3 +1,5 @@
+# Hurst painting using turtle graphics.
+
 import colorgram
 import random
 from turtle import Turtle, Screen
@@ -10,6 +12,7 @@ colors = colorgram.extract('Day18/hurst.jfif', 15)
 
 color_list = []
 
+# Append the RGB values of the colors to a list.
 for color in colors:
     r = color.rgb.r
     g = color.rgb.g
@@ -30,6 +33,7 @@ for dot_count in range(1, number_of_dots + 1 ):
     tim.penup()
     tim.forward(50)
 
+    # Every 10 dots, move to the next row.
     if dot_count % 10 == 0:
         tim.setheading(90)
         tim.forward(50)
